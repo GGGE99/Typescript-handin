@@ -1,1 +1,30 @@
-#Hej sa
+## Explain and Reflect:
+- Explain the differences between Java and JavaScript + node. Topics you could include:
+	- java er meget type bestemmt hvor javascript er helt ligeglad med typer.
+	- java skal compiles før det kan køre og det er inbygget i java. hvor java script er et runtime sprog. dette gøre også at java scrpit ikke køre på samme møde som alle steder det gør java dog.
+-   that Java is a compiled language and JavaScript a scripted language
+	- java skal compiles før det kan køres
+-   Java is both a language and a platform
+    -	compile er inbygget i java
+-   General differences in language features.
+    
+-   Blocking vs. non-blocking
+	- Blocking vil sige at vi blocker vores stack så der ikke kan komme nye ting i den + vi ikke kan re-rendar vores side så java scripten i den vil opleves som frosset 
+	- non-blocking er så det modstatte vi benytter web-api's/node-api's til at eksevkere tungere kode så det ikke blocker java sripts stack. dette er nødvenditg da javascript er et single threaded sprog og derfor ikke kan lave andet en opgave afgangen så hvis der er noget der optager dens ene thread så vil den ikke komme vider.  :smile:   
+
+-   Explain generally about node.js, when it “makes sense” and npm, and how it “fits” into the node echo system.
+	- node.js giver mulighed for at køre javascript uden for en browser. Da det benytter V8 til at lave et runtime miljø på vores maskine derfor opføre javascript sige også lidt afnderledes når det er i node vs når det er i browser. 
+	- npm gør det her til muligt at styre vore dependencies og gøre at vi ikke skal sende koden til dem med rundt når vi deler vores koden med ander (Dette kan let være 2-4 GB)
+    
+-   Explain about the Event Loop in JavaScript, including terms like; blocking, non-blocking, event loop, callback queue and "other" API's. Make sure to include why this is relevant for us as developers.
+	- Event loopet lytter til om stacken er tom og hvis den er det tager den den forest callback i callback queuen. Callbacks kommer i queuen når man køre afsynkron kode da man ligger en opgave ud til et api som så ligger en callback i queuen når det er færdig. Dette gør at man kan arebjde med ting der tager længere tid uden at blocke stacken da det tunge arebejde bliver lavet et andet sted. Hvis stacken bliver blocket så kan javascript ikke rerendars og vil der for se udsom om det er froset. Derfor er det rigtig vigtigt at lave kode som er non-bolcking nå man arebejde i javascript. 
+    
+-   What does it mean if a method in nodes API's ends with xxxxxxSync?
+	- Det betydder at det er den sykrone version af methoden. den er ofte mere simple at bruge end den af syncrone da man ikke behøver calbacks. det fungere dog også blokerne, som er et abselut no go i javascript.
+    
+-   Explain the terms JavaScript Engine (name at least one) and JavaScript Runtime Environment (name at least two)
+	- Javascript i sig selv har ikke et runtime milijø der for skal man bruge en "engine" til at køre koden der findes flere forskelige chrome og node bruger V8, IE og edge brugere Chakra, firefox bruger SpiderMonkey og safari bruger Nitro. Da browserne brugere forskelige engines understøtter de heller ikke alle samme det samme (derfor ECMA, og Bable rigtig fedt) 
+    
+
+Explain (some) of the purposes with the tools Babel and WebPack and how they differ from each other. Use examples from the exercises.
+lave java script til en tidligere version og samle det i et bundel så det fylder mindre og ligger i 1 fil eller i hvertfald mindre filer end før :smile:
