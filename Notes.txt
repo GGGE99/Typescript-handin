@@ -1,0 +1,12 @@
+How to, dynamically, assign a port number via an environment variable
+	- const port = process.env.PORT || 3000
+How to use nodemon, to dynamically restart the server, whenever we make changes to our code
+    	- npm i -g nodemon
+	- nodemon index.js
+How to read request parameters (/:id)
+	- req.params.id
+How to read query parameters (/?sort=asc)
+	-req.query
+How to read the request body (typically for POST or PUT)
+	- app.use(express.json())
+	- req.body
