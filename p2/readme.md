@@ -1,3 +1,5 @@
+#### startkode ligger her https://github.com/GGGE99/typescript-startcode
+
 ##### Explain Pros & Cons in using Node.js + Express to implement your Backend compared to a strategy using, for example, Java/JAX-RS/Tomcat
 ###### Pros
 - Fullstack javascript
