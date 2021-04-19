@@ -15,7 +15,7 @@ debug er nem at slå dele til at fra det blocker ikke og det giver en nem måde 
 bin/www.ts
 
 ##### Explain, using relevant examples, concepts related to testing a REST-API using Node/JavaScript/Typescript + relevant packages
-------------------------har jeg ikke lavet endnu--------------------------
+
 ##### Explain a setup for Express/Node/Test/Mongo-DB/GraphQL development with Typescript, and how it handles "secret values", debug, debug-outputs, application logging and testing.
 
 ##### Explain a setup for Express/Node/Test/Mongo-DB/GraphQL development with Typescript. Focus on how it uses Mongo-DB (how secret values are handled, how connections (production or test) are passed on to relevant places in code, and if use, how authentication and authorization is handled
