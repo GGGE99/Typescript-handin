@@ -11,8 +11,10 @@ import nameRoutes from "./routes/NameInfoRoutes";
 //import friendsRoutes from "./routes/friendRoutes";
 const debug = require("debug")("app")
 import { Request, Response, NextFunction } from "express"
+import cors from 'cors'
 
 const app = express()
+app.use(cors())
 
 app.use(express.json())
 
