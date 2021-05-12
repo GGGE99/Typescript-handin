@@ -22,9 +22,6 @@ describe("What to do endpoint", function () {
 
     it("Should eventually provide 'drink a single beer'", async function () {
         const response = await request.get("/api/nameinfo/marc")
-        // nock.isDone()
-        console.log(response)
-
         expect(response.body.gender).to.be.equal("male");
         expect(response.body.age).to.be.equal(50);
         expect(response.body.country).to.be.equal("DK");

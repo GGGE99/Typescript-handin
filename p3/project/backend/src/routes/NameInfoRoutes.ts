@@ -11,8 +11,6 @@ router.get('/:name', async (req, res, next) => {
         "https://api.nationalize.io?name="+ name,
         "https://api.agify.io?name="+ name]
 
-        console.log(urls)
-
     // console.log(await facade.get_info("Https://api.genderize.io?name=ivan"))
 
     let genderize: any, nationalize: any, agify: any
